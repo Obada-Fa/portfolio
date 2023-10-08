@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Martian+Mono:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*navbar*/
+
+nav {
+    display: flex;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 3px solid #ffffff;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-links-container a,
+#sumbit-button .button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s ease;
+}
+
+#nav-links-container a:hover,
+#sumbit-button:hover,
+.button:hover {
+
+    border-left: white solid 1px;
+    border-bottom: white solid 1px;
+    border-start-start-radius: 10px;
+    transform: scale(1.2);
+}
+
+
+nav img,
+footer img {
+    width: 110px;
+}
+
+
+
+
+
+/*about me (header)*/
+
+
+h1 {
+    margin-left: 30px;
+    text-align: left;
+    font-family: 'Abel', sans-serif;
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+    padding: 20vh 0;
+    background-size: cover;
+    background-image: url('../images/aboutMeBG.jpg');
+    background-repeat: no-repeat;
+    background-position: left 0% bottom 40%;
+    border-bottom: 3px solid black;
+
+}
+
+.aboutMe {
+    width: 60vw;
+}
+
+.aboutMe p {
+    font-family: 'Abel', sans-serif;
+    text-align: left;
+    color: white;
+    margin-top: 2vw;
+    margin-left: 40px;
+    text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: rgba(31, 31, 31, 0.2);
+}
+
+.button,
+#sumbit-button {
+    font-family: 'Orbitron', sans-serif;
+    display: inline-block;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+
+.buttons-container .button {
+    background-color: rgb(231, 231, 231);
+    color: black;
+}
+
+
+
+
+
+
+/*  Projects */
+
+#projects-heading,
+#contact-heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-family: 'Abel', sans-serif;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: black solid 1px;
+    margin: 2vw;
+    margin-top: 0;
+    border-radius: 1vw;
+}
+
+.project p {
+    font-family: 'Abel', sans-serif;
+    padding: 1vw;
+}
+
+.project h3 {
+    font-family: 'Abel', sans-serif;
+    padding: 1vw;
+    padding-top: 1vw;
+}
+
+
+
+.project img {
+    width: 100%;
+    aspect-ratio: 16/9; 
+    border-radius: 0.7vw;
+    border-bottom-left-radius: 0;
+}
+
+.project,
+.project a {
+    transition: all 0.6s ease;
+}
+
+.project a:hover {
+    transform: scale(1.1);
+}
+
+.project:hover {
+    transform: translateY(-20px);
+}
+
+.stars {
+    font-size: 1.7rem;
+    color: gold;
+    padding: 0 1vw;
+}
+
+
+
+
+
+/*Form*/
+
+/* Add styles for the form container */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+
+
+/* Style the form labels and inputs */
+.label-input-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+.two-fields-row,
+#terms-input-container {
+    display: flex;
+    width: 100%;
+    gap: 0px 15px;
+}
+
+#last-name {
+    justify-content: flex-start;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Abel', sans-serif;
+}
+
+
+.radio-fields-container {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    height: 38px;
+}
+
+input[type="radio"] {
+    margin: 0 10px 0 10px;
+}
+
+#newsletter-yes {
+    margin-left: 0;
+}
+
+form a {
+    flex: 1;
+}
+
+
+::placeholder {
+    font-family: Arial, sans-serif;
+}
+
+#sumbit-button {
+    flex: 1;
+
+}
+
+
+
+/* Footer */
+
+/* Left side container */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+#footer-left-container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer-logo {
+    margin: 10px 30px;
+}
+
+#footer-left-container p {
+    margin: 10px 30px;
+    margin-bottom: 0;
+    font-family: 'Abel', sans-serif;
+}
+
+#social-media-icons {
+    color: white;
+    margin: 10px 30px;
+}
+
+#social-media-icons i {
+    color: white;
+    margin: 0 5px;
+}
+
+/* Right side footer container */
+
+
+#footer-right-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+
+#footer-right-container a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-family: 'Abel', sans-serif;
+    transform: scale(1.1);
+}
+
+/* Media queries for mobile */
+
+@media (max-width: 480px) and (orientation: portrait) {
+
+    nav,
+    #nav-links-container,
+    .projects-container,
+    .label-input-container,
+    .two-fields-row,
+    footer,
+    #footer-left-container,
+    #footer-right-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer-right-container {
+        align-items: start;
+        margin-top: 0;
+    }
+
+    nav img {
+        margin-bottom: 10px;
+    }
+
+    header {
+        background-position: right 30% bottom 40%;
+    }
+
+    .aboutMe {
+        width: 95vw;
+    }
+
+    .aboutMe p {
+        text-align: center;
+
+        background-color: rgba(31, 31, 31, 0.3);
+    }
+
+    .aboutMe h1 {
+        text-align: center;
+    }
+}
+
+/* Media querie for Dark Mode */
+@media (prefers-color-scheme: dark) {
+    header {
+        border-color: rgb(223, 223, 223);
+    }
+
+    body {
+        background-color: #292929;
+    }
+
+    .projects-container {
+        color: white;
+    }
+
+    .project {
+        border: 2px rgb(223, 223, 223) solid;
+    }
+
+    #projects-heading,
+    #contact-heading {
+        color: #f2f2f2;
+    }
+
+
+    .project .button,
+    #sumbit-button{
+        background-color: white;
+        color: black;
+    }
+
+    .buttons-container .button {
+        background-color: #121212;
+        color: #f2f2f2;
+    }
+    .project,
+    form {
+        background-color: #4d4d4d;
+        color: #f2f2f2;
+    }
+    form label{
+        font-weight:normal;
+    }
+    #sumbit-button{
+        border:0;
+    }
+
+    footer{
+        border-top: rgb(223, 223, 223) solid 3px;
+    }
+}

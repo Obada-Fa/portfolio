@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obada's Story</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <div id="nav-links-container">
+            <a href="#projects-heading">Projects</a>
+            <a href="gellery">Gallery</a>
+            <a href="#contact-heading">Contact</a>
+            <a href="#about">About</a>
+        </div>
+
+    </nav>
+
+    <!-- Header - introduction about me  -->
+
+
+    <header>
+        <div class="aboutMe" id="about">
+            <h1>Obada's Story</h1>
+            <p>
+                I'm Obada, a versatile videographer and photographer. My journey started with capturing captivating
+                landscapes and evolved into a mission to spotlight the stories of Syrian refugees in Jordan.
+                This experience transformed my perspective, driving me to create impactful visuals.
+                Today, I specialize in commercial videography, documentaries, YouTube content, and music videography.
+                My lens is my voice, and I use it to connect with audiences and send powerful messages.
+                Join me as I continue this visual journey, one frame at a time.
+
+            </p>
+            <div class="buttons-container">
+                <a href="projects-heading" class="button">Projects</a>
+                <a href="gallery" class="button">Gallery</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+
+
+        <!-- Projects  -->
+
+
+        <h2 id="projects-heading">Projects</h2>
+
+        <!-- projects sectoin, contains as articles inside -->
+
+        <section class="projects-container">
+            <article class="project">
+                <img src="images/Project 1.jpg" alt="Darwish's session">
+                <h3>AlDarwish | live session</h3>
+                <div class="stars">★★★★☆</div>
+                <p>I served as the Director of Photography (DOP) for a live rap session featuring Syrian rapper Al
+                    Darwish.
+                    My role included capturing dynamic visuals and creating an immersive lighting setup to enhance the
+                    performance's energy and atmosphere.
+                    This project showcased my ability to combine cinematography and lighting design to complement Al
+                    Darwish's captivating stage presence.</p>
+                <div><a href="project1" class="button"> See all</a></div>
+            </article>
+
+            <article class="project">
+                <img src="images/Project 2.jpg" alt="Mali Leil">
+                <h3>AlDarwish | Mali Leil (Official Music Video)</h3>
+                <div class="stars">★★★★★</div>
+                <p>I had the privilege of serving as the Director of Photography (DOP) for an outdoor disstrack video
+                    clip featuring Syrian rapper Al Darwish. This project allowed me to showcase my cinematography and
+                    lighting skills in an outdoor setting, capturing the intensity of the disstrack with dynamic visuals
+                    that complemented Al Darwish's performance.</p>
+                <div><a href="project1" class="button"> See all</a></div>
+            </article>
+
+            <article class="project">
+                <img src="images/Project 3.jpg" alt="Canari">
+                <h3>DKTUR | CANARI ( Official Music Video)</h3>
+                <div class="stars">★★★☆☆</div>
+                <p>I had the opportunity to serve as the Director of Photography (DOP) for DKTUR's "Canari" disstrack
+                    video clip, which was filmed in a warehouse setting with dark, industrial lighting. This project
+                    challenged me to harness my cinematography and lighting skills in this unique atmosphere, capturing
+                    the edgy and atmospheric visuals that perfectly complemented the gritty theme of the diss track.</p>
+                <div><a href="project1" class="button"> See all</a></div>
+            </article>
+        </section>
+
+
+
+        <!-- Contact Form -->
+
+        <section class="contact">
+            <h3 id="contact-heading">Contact</h3>
+            <form>
+                <!-- containers for fields in a row -->
+                <div class="two-fields-row">
+                    <!-- container positioning label and input as a column -->
+                    <div class="label-input-container">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name">
+                    </div>
+                    <div class="label-input-container">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                    </div>
+                </div>
+
+                <div class="label-input-container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email address">
+                </div>
+
+                <div class="two-fields-row">
+                    <div class="label-input-container">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" placeholder="City">
+                    </div>
+                    <div class="label-input-container">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" placeholder="dd-mm-yyyy">
+                    </div>
+                </div>
+
+                <div class="label-input-container">
+                    <label for="subjects">Select a subject</label>
+                    <select id="subject" name="subject">
+                        <option value="" disabled selected>Select a subject</option>
+                        <option value="job">Job Opportunities</option>
+                        <option value="feedback-questions">Feedback or Questions</option>
+                        <option value="partnership-collabs">Partnerships and Collaborations</option>
+                    </select>
+                </div>
+
+                <div class="label-input-container">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" required placeholder="Message"></textarea>
+                </div>
+
+                <label for="newsletter">Would you like to subscribe for owr newsletter ?</label>
+                <!-- contains the radio buttons for styling -->
+                <div class="radio-fields-container">
+                    <input type="radio" id="newsletter-yes" name="newsletter-yes" value="newsletter-yes">
+                    <label for="newsletter-yes">Yes</label>
+                    <input type="radio" id="newsletter-no" name="newsletter-no" value="newsletter-no">
+                    <label for="newsletter-no">No</label>
+                </div>
+
+                <div class="label-input-container">
+                    <div id="terms-input-container">
+                        <input type="checkbox" id="agree-terms" name="terms-checkbox" value="agree">
+                        <label for="terms-checkbox">i agree to the terms and conditions</label>
+                    </div>
+                </div>
+
+                <button type="submit" id="sumbit-button">Submit</button>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- container for seperating right side and left side of the footer -->
+        <div id="footer-left-container">
+            <img src="images/logo.png" alt="logo" id="footer-logo">
+            <p>&copy; Obada Fatta</p>
+            <!-- social media icons container -->
+            <div id="social-media-icons">
+                <a href="https://www.facebook.com/1ubada.fatta" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+                <a href="https://www.youtube.com/@MoMusicStation" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ubadafatta/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <div id="footer-right-container">
+            <a href="privacy">Privacy Policy</a>
+            <a href="terms-conditions">Terms and Conditions</a>
+            <a href="cookies">Cookies</a>
+            <a href="#contact-heading">Contact</a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
